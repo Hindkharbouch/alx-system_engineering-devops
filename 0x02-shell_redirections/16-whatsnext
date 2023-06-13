@@ -1,2 +1,2 @@
 #!/bin/bash
-head -n 3 | grep '^root' /etc/passwd
+perl -lne 'print if $. % 2 ==1'
